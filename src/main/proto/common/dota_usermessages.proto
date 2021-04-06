@@ -1352,3 +1352,9 @@ message CMsgDOTACombatLogEntry {
     optional bool at_night_time = 74;
     optional bool attacker_has_scepter = 75;
 }
+
+message CDOTAUserMsg_ChatMessage {
+	optional int32 source_player_id = 1;
+	optional uint32 channel_type = 2;
+	optional string message_text = 3;
+}
